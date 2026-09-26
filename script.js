@@ -1,4 +1,4 @@
-(function() {
+(function () {
     // ==================== DOM ELEMENTS ====================
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navbarNav = document.getElementById('navbarNav');
@@ -31,7 +31,7 @@
     }
 
     if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.addEventListener('click', function () {
             if (navbarNav.classList.contains('open')) {
                 closeMobileMenu();
             } else {
@@ -53,7 +53,7 @@
     });
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (navbarNav.classList.contains('open') &&
             !navbarNav.contains(e.target) &&
             !mobileMenuToggle.contains(e.target)) {
@@ -62,7 +62,7 @@
     });
 
     // Close mobile menu on Escape key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && navbarNav.classList.contains('open')) {
             closeMobileMenu();
             mobileMenuToggle.focus();
@@ -128,7 +128,7 @@
     }
 
     langOptions.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const lang = this.getAttribute('data-lang');
             if (lang && lang !== currentLang) {
                 switchLanguage(lang);
@@ -138,7 +138,7 @@
 
     // Keyboard accessibility for language switcher
     if (langSwitcher) {
-        langSwitcher.addEventListener('keydown', function(e) {
+        langSwitcher.addEventListener('keydown', function (e) {
             if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
                 e.preventDefault();
                 const newLang = currentLang === 'en' ? 'bn' : 'en';
@@ -198,7 +198,7 @@
     }
 
     packageTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function () {
             const tabName = this.getAttribute('data-tab');
             if (tabName) {
                 switchPackageTab(tabName);
@@ -216,7 +216,7 @@
 
     // ==================== FLIGHT SEARCH FORM HANDLER ====================
     if (flightSearchForm) {
-        flightSearchForm.addEventListener('submit', function(event) {
+        flightSearchForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const from = document.getElementById('departureFrom').value;
             const to = document.getElementById('arrivalTo').value;
@@ -253,7 +253,7 @@
 
     // ==================== SMOOTH SCROLL FOR ANCHOR LINKS ====================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href === '#') return;
             const target = document.querySelector(href);
@@ -287,8 +287,8 @@
             link.classList.remove('active');
             const href = link.getAttribute('href');
             const targetId = href ? href.replace('#', '') : '';
-            if (targetId === currentSectionId || 
-               ((currentSectionId === 'caplan-overseas' || currentSectionId === 'caplan-international' || currentSectionId === 'services') && (targetId === 'services' || targetId === currentSectionId))) {
+            if (targetId === currentSectionId ||
+                ((currentSectionId === 'caplan-overseas' || currentSectionId === 'caplan-international' || currentSectionId === 'services') && (targetId === 'services' || targetId === currentSectionId))) {
                 link.classList.add('active');
             }
         });
@@ -392,7 +392,7 @@
         }
 
         heroDots.forEach(dot => {
-            dot.addEventListener('click', function() {
+            dot.addEventListener('click', function () {
                 const targetIndex = parseInt(this.getAttribute('data-slide-to'), 10);
                 if (!isNaN(targetIndex)) {
                     showSlide(targetIndex);
@@ -518,7 +518,7 @@
         }
 
         caplanDots.forEach(dot => {
-            dot.addEventListener('click', function() {
+            dot.addEventListener('click', function () {
                 const targetIndex = parseInt(this.getAttribute('data-slide-to'), 10);
                 if (!isNaN(targetIndex)) {
                     showCaplanSlide(targetIndex);
@@ -551,6 +551,139 @@
         }, { passive: true });
 
         startCaplanAutoRotate();
+    }
+
+    // ==================== GALLERY CAROUSEL FUNCTIONALITY ====================
+    const galleryContainer = document.getElementById('galleryCarouselContainer');
+    const galleryTrack = document.getElementById('galleryCarouselTrack');
+    const gallerySlides = document.querySelectorAll('.gallery-slide');
+    const galleryDots = document.querySelectorAll('.gallery-dot');
+    const galleryPrevBtn = document.getElementById('galleryPrevBtn');
+    const galleryNextBtn = document.getElementById('galleryNextBtn');
+
+    if (galleryTrack && gallerySlides.length > 0) {
+        let currentGallerySlide = 0;
+        let galleryInterval = null;
+        const galleryAutoRotateDelay = 4500;
+
+        function getVisibleGallerySlidesCount() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 640) return 2;
+            return 1;
+        }
+
+        function getMaxGalleryIndex() {
+            const visible = getVisibleGallerySlidesCount();
+            return Math.max(0, gallerySlides.length - visible);
+        }
+
+        function updateGallerySlide(index) {
+            const maxIdx = getMaxGalleryIndex();
+            if (index < 0) {
+                currentGallerySlide = maxIdx;
+            } else if (index > maxIdx) {
+                currentGallerySlide = 0;
+            } else {
+                currentGallerySlide = index;
+            }
+
+            const firstSlide = gallerySlides[0];
+            if (firstSlide) {
+                const trackStyle = window.getComputedStyle(galleryTrack);
+                const gap = parseFloat(trackStyle.gap) || 24;
+                const slideWidth = firstSlide.getBoundingClientRect().width;
+                const moveAmount = currentGallerySlide * (slideWidth + gap);
+                galleryTrack.style.transform = `translateX(-${moveAmount}px)`;
+            }
+
+            galleryDots.forEach((dot, idx) => {
+                if (idx === currentGallerySlide) {
+                    dot.classList.add('active');
+                    dot.setAttribute('aria-selected', 'true');
+                } else {
+                    dot.classList.remove('active');
+                    dot.setAttribute('aria-selected', 'false');
+                }
+            });
+        }
+
+        function nextGallerySlide() {
+            updateGallerySlide(currentGallerySlide + 1);
+        }
+
+        function prevGallerySlide() {
+            updateGallerySlide(currentGallerySlide - 1);
+        }
+
+        function startGalleryAutoRotate() {
+            stopGalleryAutoRotate();
+            galleryInterval = setInterval(nextGallerySlide, galleryAutoRotateDelay);
+        }
+
+        function stopGalleryAutoRotate() {
+            if (galleryInterval) {
+                clearInterval(galleryInterval);
+                galleryInterval = null;
+            }
+        }
+
+        function resetGalleryAutoRotate() {
+            stopGalleryAutoRotate();
+            startGalleryAutoRotate();
+        }
+
+        if (galleryNextBtn) {
+            galleryNextBtn.addEventListener('click', () => {
+                nextGallerySlide();
+                resetGalleryAutoRotate();
+            });
+        }
+
+        if (galleryPrevBtn) {
+            galleryPrevBtn.addEventListener('click', () => {
+                prevGallerySlide();
+                resetGalleryAutoRotate();
+            });
+        }
+
+        galleryDots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                const slideTo = parseInt(this.getAttribute('data-slide-to'), 10);
+                if (!isNaN(slideTo)) {
+                    updateGallerySlide(slideTo);
+                    resetGalleryAutoRotate();
+                }
+            });
+        });
+
+        if (galleryContainer) {
+            galleryContainer.addEventListener('mouseenter', stopGalleryAutoRotate);
+            galleryContainer.addEventListener('mouseleave', startGalleryAutoRotate);
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            galleryContainer.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                stopGalleryAutoRotate();
+            }, { passive: true });
+
+            galleryContainer.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                if (touchEndX < touchStartX - 40) {
+                    nextGallerySlide();
+                } else if (touchEndX > touchStartX + 40) {
+                    prevGallerySlide();
+                }
+                startGalleryAutoRotate();
+            }, { passive: true });
+        }
+
+        window.addEventListener('resize', () => {
+            updateGallerySlide(currentGallerySlide);
+        });
+
+        startGalleryAutoRotate();
     }
 
     // ==================== INITIALIZATION LOG ====================
