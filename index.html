@@ -57,9 +57,11 @@
     <header class="site-header sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm transition-shadow duration-300 h-[64px] sm:h-[72px]" id="siteHeader" role="banner">
         <div class="max-w-[1280px] mx-auto px-3 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-2 sm:gap-4">
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-2 sm:gap-3 shrink-0 font-extrabold text-base sm:text-xl text-primary-dark tracking-tight" aria-label="Caplan Overseas Travels Home">
-                <span class="w-8 h-8 sm:w-[42px] sm:h-[42px] bg-gradient-to-br from-primary to-primary-dark rounded-lg sm:rounded-xl flex items-center justify-center text-accent text-base sm:text-xl shrink-0 shadow-sm">🕋</span>
-                <span data-lang-en="Caplan" data-lang-bn="ক্যাপলান" class="whitespace-nowrap">Caplan</span>
+            <a href="#" class="flex items-center gap-2.5 sm:gap-3 shrink-0 font-extrabold text-base sm:text-xl text-primary-dark tracking-tight group" aria-label="Caplan Overseas Ltd. Home">
+                <div class="w-10 h-10 sm:w-[46px] sm:h-[46px] bg-white rounded-full border border-gray-200 shadow-sm overflow-hidden p-0.5 shrink-0 flex items-center justify-center group-hover:border-primary transition-colors">
+                    <img src="images/logo.jpeg" alt="Caplan Overseas Ltd. Logo" class="w-full h-full object-contain rounded-full" />
+                </div>
+                <span data-lang-en="Caplan" data-lang-bn="ক্যাপলান" class="whitespace-nowrap font-extrabold text-gray-900 group-hover:text-primary transition-colors">Caplan</span>
             </a>
 
             <!-- Navigation Links -->
@@ -78,14 +80,18 @@
                     <div class="nav-dropdown-menu absolute left-0 top-full pt-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 transform origin-top-left group-hover:translate-y-0 translate-y-2 pointer-events-none group-hover:pointer-events-auto">
                         <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-2 space-y-1">
                             <a href="#caplan-overseas" class="dropdown-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-gray-700 hover:bg-emerald-50 hover:text-primary transition-all font-medium group/item">
-                                <span class="w-8 h-8 rounded-lg bg-emerald-100/80 text-primary-dark flex items-center justify-center text-sm font-bold shrink-0 shadow-xs group-hover/item:scale-110 transition-transform">✈️</span>
+                                <span class="w-8 h-8 rounded-lg bg-white border border-emerald-200 p-0.5 flex items-center justify-center shrink-0 shadow-xs group-hover/item:scale-110 transition-transform overflow-hidden">
+                                    <img src="images/caplan-overseas-logo.jpg" alt="Caplan Overseas Ltd. Logo" class="w-full h-full object-contain rounded-md" />
+                                </span>
                                 <div class="flex flex-col">
                                     <span class="font-semibold text-gray-900 group-hover/item:text-primary-dark transition-colors" data-lang-en="Caplan Overseas" data-lang-bn="ক্যাপলান ওভারসিজ">Caplan Overseas</span>
                                     <span class="text-[11px] text-gray-400 font-normal" data-lang-en="Hajj, Umrah & Overseas" data-lang-bn="হজ্জ, উমরাহ ও ওভারসিজ">Hajj, Umrah & Overseas</span>
                                 </div>
                             </a>
-                            <a href="#caplan-international" class="dropdown-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-gray-700 hover:bg-amber-50/80 hover:text-amber-800 transition-all font-medium group/item border-t border-gray-50">
-                                <span class="w-8 h-8 rounded-lg bg-amber-100/80 text-amber-700 flex items-center justify-center text-sm font-bold shrink-0 shadow-xs group-hover/item:scale-110 transition-transform">🌐</span>
+                            <a href="#caplan-international" class="dropdown-item flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm text-gray-700 hover:bg-amber-50/80 hover:text-amber-800 transition-all font-medium group/item">
+                                <span class="w-8 h-8 rounded-lg bg-white border border-amber-200 p-0.5 flex items-center justify-center shrink-0 shadow-xs group-hover/item:scale-110 transition-transform overflow-hidden">
+                                    <img src="images/caplan-international-logo.jpg" alt="Caplan International Logo" class="w-full h-full object-contain rounded-md" />
+                                </span>
                                 <div class="flex flex-col">
                                     <span class="font-semibold text-gray-900 group-hover/item:text-amber-800 transition-colors" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">Caplan International</span>
                                     <span class="text-[11px] text-gray-400 font-normal" data-lang-en="Global Travel & Tours" data-lang-bn="গ্লোবাল ট্রাভেল ও ট্যুরস">Global Travel & Tours</span>
@@ -94,7 +100,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- <a href="#sister-concern" class="nav-link relative py-1 hover:text-primary transition-colors duration-200" data-lang-en="Sister Concern" data-lang-bn="সিস্টার কনসার্ন">Sister Concern</a> -->
                 <a href="#directors" class="nav-link relative py-1 hover:text-primary transition-colors duration-200" data-lang-en="Board of Directors" data-lang-bn="পরিচালনা পর্ষদ">Board of Directors</a>
                 <a href="#contact" class="nav-link relative py-1 hover:text-primary transition-colors duration-200" data-lang-en="Contact" data-lang-bn="যোগাযোগ">Contact</a>
@@ -132,14 +137,10 @@
                         >
                         <div class="absolute inset-0 bg-gradient-to-b from-[#06281e]/80 via-[#0b352d]/70 to-[#061e16]/90"></div>
                         <div class="hero-slide-content absolute inset-0 z-20 flex items-center justify-center">
-                            <div class="max-w-[800px] mx-auto px-3.5 sm:px-4 py-12 sm:py-20 animate-fadeInUp">
-                                <!-- <span class="inline-block max-w-full bg-accent/20 border border-accent/40 text-accent-light px-3.5 py-1 sm:px-5 sm:py-1.5 rounded-full font-semibold text-[11px] sm:text-xs tracking-wider uppercase mb-4 sm:mb-6 shadow-sm truncate" data-lang-en="Trusted Since 2008 · Licensed Agency" data-lang-bn="২০০৮ সাল থেকে বিশ্বস্ত · লাইসেন্সপ্রাপ্ত">Trusted Since 2008 · Licensed Agency</span> -->
-                                <h1 class="hero-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 tracking-tight drop-shadow-md" data-lang-en="Caplan Overseas Ltd." data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">
-                                    Caplan Overseas Ltd.
+                            <div class="max-w-5xl sm:max-w-6xl mx-auto px-2 xs:px-4 py-12 sm:py-20 animate-fadeInUp text-center">
+                                <h1 class="hero-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 drop-shadow-md uppercase text-center whitespace-nowrap" data-lang-en="Caplan Overseas Ltd." data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">
+                                    CAPLAN OVERSEAS LTD.
                                 </h1>
-                                <p class="hero-subtitle text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Experience a spiritually fulfilling Hajj & Umrah with Bangladesh's most reliable travel partner. We handle every detail — so you can focus on your Ibadah." data-lang-bn="বাংলাদেশের সবচেয়ে নির্ভরযোগ্য ভ্রমণ অংশীদারের সাথে হজ্জ ও উমরাহর আধ্যাত্মিক পরিপূর্ণতা অনুভব করুন। আমরা প্রতিটি বিষয়ের যত্ন নিই — যাতে আপনি আপনার ইবাদতে মনোনিবেশ করতে পারেন।">
-                                    Experience a spiritually fulfilling Hajj & Umrah with Bangladesh's most reliable travel partner. We handle every detail — so you can focus on your Ibadah.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -154,14 +155,10 @@
                         >
                         <div class="absolute inset-0 bg-gradient-to-b from-[#06281e]/85 via-[#0b352d]/75 to-[#061e16]/90"></div>
                         <div class="hero-slide-content absolute inset-0 z-20 flex items-center justify-center">
-                            <div class="max-w-[800px] mx-auto px-3.5 sm:px-4 py-12 sm:py-20 animate-fadeInUp">
-                                <!-- <span class="inline-block max-w-full bg-accent/20 border border-accent/40 text-accent-light px-3.5 py-1 sm:px-5 sm:py-1.5 rounded-full font-semibold text-[11px] sm:text-xs tracking-wider uppercase mb-4 sm:mb-6 shadow-sm truncate" data-lang-en="Trusted Since 2008 · Licensed Agency" data-lang-bn="২০০৮ সাল থেকে বিশ্বস্ত · লাইসেন্সপ্রাপ্ত">Trusted Since 2008 · Licensed Agency</span> -->
-                                <h1 class="hero-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 tracking-tight drop-shadow-md" data-lang-en="Caplan Overseas Ltd." data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">
-                                    Caplan Overseas Ltd.
+                            <div class="max-w-5xl sm:max-w-6xl mx-auto px-2 xs:px-4 py-12 sm:py-20 animate-fadeInUp text-center">
+                                <h1 class="hero-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 drop-shadow-md uppercase text-center whitespace-nowrap" data-lang-en="Caplan Overseas Ltd." data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">
+                                    CAPLAN OVERSEAS LTD.
                                 </h1>
-                                <p class="hero-subtitle text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Experience a spiritually fulfilling Hajj & Umrah with Bangladesh's most reliable travel partner. We handle every detail — so you can focus on your Ibadah." data-lang-bn="বাংলাদেশের সবচেয়ে নির্ভরযোগ্য ভ্রমণ অংশীদারের সাথে হজ্জ ও উমরাহর আধ্যাত্মিক পরিপূর্ণতা অনুভব করুন। আমরা প্রতিটি বিষয়ের যত্ন নিই — যাতে আপনি আপনার ইবাদতে মনোনিবেশ করতে পারেন।">
-                                    Experience a spiritually fulfilling Hajj & Umrah with Bangladesh's most reliable travel partner. We handle every detail — so you can focus on your Ibadah.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -176,14 +173,10 @@
                         >
                         <div class="absolute inset-0 bg-gradient-to-b from-[#06281e]/85 via-[#0b352d]/75 to-[#061e16]/90"></div>
                         <div class="hero-slide-content absolute inset-0 z-20 flex items-center justify-center">
-                            <div class="max-w-[800px] mx-auto px-3.5 sm:px-4 py-12 sm:py-20 animate-fadeInUp">
-                                <!-- <span class="inline-block max-w-full bg-accent/20 border border-accent/40 text-accent-light px-3.5 py-1 sm:px-5 sm:py-1.5 rounded-full font-semibold text-[11px] sm:text-xs tracking-wider uppercase mb-4 sm:mb-6 shadow-sm truncate" data-lang-en="Trusted Since 2008 · Licensed Agency" data-lang-bn="২০০৮ সাল থেকে বিশ্বস্ত · লাইসেন্সপ্রাপ্ত">Trusted Since 2008 · Licensed Agency</span> -->
-                                <h1 class="hero-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 tracking-tight drop-shadow-md" data-lang-en="Caplan Overseas Ltd." data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">
-                                    Caplan Overseas Ltd.
+                            <div class="max-w-5xl sm:max-w-6xl mx-auto px-2 xs:px-4 py-12 sm:py-20 animate-fadeInUp text-center">
+                                <h1 class="hero-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 drop-shadow-md uppercase text-center whitespace-nowrap" data-lang-en="Caplan Overseas Ltd." data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">
+                                    CAPLAN OVERSEAS LTD.
                                 </h1>
-                                <p class="hero-subtitle text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Experience a spiritually fulfilling Hajj & Umrah with Bangladesh's most reliable travel partner. We handle every detail — so you can focus on your Ibadah." data-lang-bn="বাংলাদেশের সবচেয়ে নির্ভরযোগ্য ভ্রমণ অংশীদারের সাথে হজ্জ ও উমরাহর আধ্যাত্মিক পরিপূর্ণতা অনুভব করুন। আমরা প্রতিটি বিষয়ের যত্ন নিই — যাতে আপনি আপনার ইবাদতে মনোনিবেশ করতে পারেন।">
-                                    Experience a spiritually fulfilling Hajj & Umrah with Bangladesh's most reliable travel partner. We handle every detail — so you can focus on your Ibadah.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -191,13 +184,13 @@
             </div>
 
             <!-- Navigation Controls: Previous / Next Buttons -->
-            <button type="button" class="hero-carousel-btn hero-carousel-prev absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/30 hover:bg-accent/80 border border-white/20 hover:border-accent text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-accent" id="heroPrevBtn" aria-label="Previous Slide">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button type="button" class="hero-carousel-btn hero-carousel-prev absolute left-1 xxs:left-2 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-7 h-7 xxs:w-8 xxs:h-8 sm:w-11 sm:h-11 rounded-full bg-black/40 hover:bg-accent/80 border border-white/20 hover:border-accent text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-accent" id="heroPrevBtn" aria-label="Previous Slide">
+                <svg class="w-3.5 h-3.5 xxs:w-4 xxs:h-4 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
-            <button type="button" class="hero-carousel-btn hero-carousel-next absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/30 hover:bg-accent/80 border border-white/20 hover:border-accent text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-accent" id="heroNextBtn" aria-label="Next Slide">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button type="button" class="hero-carousel-btn hero-carousel-next absolute right-1 xxs:right-2 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-7 h-7 xxs:w-8 xxs:h-8 sm:w-11 sm:h-11 rounded-full bg-black/40 hover:bg-accent/80 border border-white/20 hover:border-accent text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-accent" id="heroNextBtn" aria-label="Next Slide">
+                <svg class="w-3.5 h-3.5 xxs:w-4 xxs:h-4 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -211,7 +204,7 @@
         </section>
 
         <!-- ==================== ABOUT US SECTION ==================== -->
-        <section class="py-12 sm:py-20 lg:py-24 bg-white" id="about" aria-labelledby="aboutTitle">
+        <!-- <section class="py-12 sm:py-20 lg:py-24 bg-white" id="about" aria-labelledby="aboutTitle">
             <div class="max-w-[1280px] mx-auto px-3 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
                 <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-primary-surface flex items-center justify-center shadow-md">
                     <img
@@ -243,39 +236,44 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- ==================== CAPLAN OVERSEAS SERVICES SECTION ==================== -->
         <section class="py-12 sm:py-20 lg:py-24 bg-gray-50/70 border-y border-gray-100" id="services" aria-labelledby="servicesTitle">
             <div class="max-w-[1280px] mx-auto px-3 sm:px-6 lg:px-8">
                 <div class="text-center mb-10 sm:mb-16">
                     <!-- <span class="inline-block text-accent-dark font-bold text-xs tracking-widest uppercase mb-2" data-lang-en="What We Offer" data-lang-bn="আমরা যা অফার করি">What We Offer</span> -->
-                    <h2 id="servicesTitle" class="text-xl sm:text-3xl lg:text-4xl font-bold text-charcoal tracking-tight mb-2 sm:mb-3" data-lang-en="Our Specialized Services" data-lang-bn="আমাদের ক্যাপলান ওভারসিজ সেবাসমূহ">Our Caplan Overseas Services</h2>
-                    <p class="text-gray-500 max-w-xl mx-auto text-xs sm:text-base px-2" data-lang-en="Discover our wide range of services under Caplan Overseas & Caplan International, tailored to make your journey seamless and spiritual." data-lang-bn="ক্যাপলান ওভারসিজ এবং ক্যাপলান ইন্টারন্যাশনাল-এর অধীনে আমাদের বিস্তৃত সেবাসমূহ আবিষ্কার করুন, যা আপনার সফরকে মসৃণ ও আধ্যাত্মিক করতে প্রস্তুত।">
+                    <div class="flex items-center justify-center gap-3 sm:gap-4 mb-2 sm:mb-3">
+                        <div class="w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full border border-emerald-200 shadow-md p-1 shrink-0 flex items-center justify-center overflow-hidden">
+                            <img src="images/caplan-overseas-logo.jpg" alt="Caplan Overseas Ltd. Logo" class="w-full h-full object-contain rounded-full" />
+                        </div>
+                        <h2 id="servicesTitle" class="text-xl sm:text-3xl lg:text-4xl font-bold text-charcoal tracking-tight" data-lang-en="Our Specialized Services" data-lang-bn="আমাদের ক্যাপলান ওভারসিজ সেবাসমূহ">Caplan Overseas Services</h2>
+                    </div>
+                    <!-- <p class="text-gray-500 max-w-xl mx-auto text-xs sm:text-base px-2" data-lang-en="Discover our wide range of services under Caplan Overseas & Caplan International, tailored to make your journey seamless and spiritual." data-lang-bn="ক্যাপলান ওভারসিজ এবং ক্যাপলান ইন্টারন্যাশনাল-এর অধীনে আমাদের বিস্তৃত সেবাসমূহ আবিষ্কার করুন, যা আপনার সফরকে মসৃণ ও আধ্যাত্মিক করতে প্রস্তুত।">
                         Discover our wide range of services under Caplan Overseas, tailored to make your journey seamless and spiritual.
-                    </p>
+                    </p> -->
                 </div>
 
                     <!-- Caplan Overseas Card -->
                     <div id="caplan-overseas" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-emerald-100/60 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
                         <div class="absolute top-0 right-0 w-36 h-36 bg-emerald-50 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
                         <div class="flex items-center gap-4 mb-6 relative z-10">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary-dark text-accent flex items-center justify-center text-2xl shadow-md shrink-0">
-                                🕋
-                            </div>
+                            <!-- <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white border border-emerald-200 p-1 shadow-md flex items-center justify-center shrink-0 overflow-hidden">
+                                <img src="images/caplan-overseas-logo.jpg" alt="Caplan Overseas Ltd. Logo" class="w-full h-full object-contain rounded-full" />
+                            </div> -->
                             <!-- <div>
-                                <span class="text-xs font-bold text-primary tracking-wider uppercase" data-lang-en="Pilgrimage & Manpower" data-lang-bn="পবিত্র হজ ও জনশক্তি">Pilgrimage & Manpower</span>
+                                <span class="text-xs font-bold text-emerald-800 tracking-wider uppercase" data-lang-en="Pilgrimage & Manpower" data-lang-bn="পবিত্র হজ ও জনশক্তি">Pilgrimage & Manpower</span>
                                 <h3 class="text-xl sm:text-2xl font-extrabold text-charcoal tracking-tight" data-lang-en="Caplan Overseas Ltd" data-lang-bn="ক্যাপলান ওভারসিজ লিমিটেড">Caplan Overseas Ltd</h3>
                             </div> -->
                         </div>
-                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-6 relative z-10" data-lang-en="Specialized in government-licensed Hajj & Umrah management, Saudi visa processing, VIP transportation in KSA, and complete overseas employment & manpower solutions." data-lang-bn="সরকারি লাইসেন্সপ্রাপ্ত হজ্জ ও উমরাহ ব্যবস্থাপনা, ভিসা প্রসেসিং, সৌদিতে ভিআইপি পরিবহন এবং সম্পূর্ণ ওভারসিজ নিয়োগ ও জনশক্তি সেবায় বিশেষায়িত।">
+                        <p class="text-gray-800 text-sm sm:text-base md:text-lg font-normal leading-relaxed mb-6 relative z-10" data-lang-en="Specialized in government-licensed Hajj & Umrah management, Saudi visa processing, VIP transportation in KSA, and complete overseas employment & manpower solutions." data-lang-bn="সরকারি লাইসেন্সপ্রাপ্ত হজ্জ ও উমরাহ ব্যবস্থাপনা, ভিসা প্রসেসিং, সৌদিতে ভিআইপি পরিবহন এবং সম্পূর্ণ ওভারসিজ নিয়োগ ও জনশক্তি সেবায় বিশেষায়িত।">
                             Specialized in government-licensed Hajj & Umrah management, Saudi visa processing, VIP transportation in KSA, and complete overseas employment & manpower solutions.
                         </p>
-                        <ul class="space-y-3 text-xs sm:text-sm text-gray-700 mb-6 relative z-10">
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Hajj & Umrah Package Management" data-lang-bn="আন্তর্জাতিক ও দেশীয় বিমান টিকিট সেবা">International & Domestic Air Ticketing</span></li>
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Saudi E-Visa & Passport Services" data-lang-bn="ভিসা প্রসেসিং সেবা">Visa Process</span></li>
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="24/7 Pilgrim Support in Makkah & Madinah" data-lang-bn="হজ সেবা প্যাকেজ">Hajj Package</span></li>
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Overseas Employment & Recruitment" data-lang-bn="ওমরাহ প্যাকেজ ও নন-প্যাকেজ সেবা">Umrah Package & Non Package</span></li>
+                        <ul class="space-y-3.5 sm:space-y-4 text-sm sm:text-base md:text-lg font-semibold text-gray-800 mb-6 relative z-10">
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Hajj & Umrah Package Management" data-lang-bn="আন্তর্জাতিক ও দেশীয় বিমান টিকিট সেবা">International & Domestic Air Ticketing</span></li>
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Saudi E-Visa & Passport Services" data-lang-bn="ভিসা প্রসেসিং সেবা">Visa Process</span></li>
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="24/7 Pilgrim Support in Makkah & Madinah" data-lang-bn="হজ সেবা প্যাকেজ">Hajj Package</span></li>
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Overseas Employment & Recruitment" data-lang-bn="ওমরাহ প্যাকেজ ও নন-প্যাকেজ সেবা">Umrah Package & Non Package</span></li>
                         </ul>
                         <!-- <a href="#packages" class="inline-flex items-center gap-2 text-primary font-bold text-xs sm:text-sm hover:text-primary-dark transition-colors group/link relative z-10" data-lang-en="Explore Hajj Packages →" data-lang-bn="হজ্জ ও উমরাহ প্যাকেজসমূহ দেখুন →">
                             Explore Hajj Packages <span class="group-hover/link:translate-x-1 transition-transform">→</span>
@@ -299,14 +297,14 @@
                         >
                         <div class="absolute inset-0 bg-gradient-to-b from-[#1c1917]/80 via-[#292524]/70 to-[#0c0a09]/90"></div>
                         <div class="caplan-slide-content absolute inset-0 z-20 flex items-center justify-center">
-                            <div class="max-w-[800px] mx-auto px-3.5 sm:px-4 py-12 sm:py-20 animate-fadeInUp">
+                            <div class="max-w-5xl sm:max-w-6xl mx-auto px-2 xs:px-4 py-12 sm:py-20 animate-fadeInUp text-center">
                                  <span class="inline-block max-w-full bg-accent/20 border border-accent/40 text-accent-light px-3.5 py-1 sm:px-5 sm:py-1.5 rounded-full font-semibold text-[11px] sm:text-xs tracking-wider uppercase mb-4 sm:mb-6 shadow-sm truncate" data-lang-en="Licence number 1697 · Recruiting Agency" data-lang-bn="লাইসেন্স নম্বর: ১৬৯৭ · জনশক্তি নিয়োগকারী সংস্থা">Licence number 1697 · Recruiting Agency </span>
-                                <h2 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 tracking-tight drop-shadow-md" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">
-                                    Caplan International
-                                </h2>
-                                <p class="text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Discover global destinations with our seamless international air ticketing, luxury holiday packages, and tourist visa services." data-lang-bn="আমাদের আন্তর্জাতিক এয়ার টিকিট, লাক্সারি হলিডে প্যাকেজ ও ট্যুরিস্ট ভিসা সেবার মাধ্যমে বিশ্বজুড়ে ঘুরে বেড়ান।">
-                                    Discover global destinations with our seamless international air ticketing, luxury holiday packages, and tourist visa services.
-                                </p>
+                                <h2 class="caplan-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 drop-shadow-md uppercase text-center whitespace-nowrap" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">
+                                     CAPLAN INTERNATIONAL
+                                 </h2>
+                                 <!-- <p class="text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Discover global destinations with our seamless international air ticketing, luxury holiday packages, and tourist visa services." data-lang-bn="আমাদের আন্তর্জাতিক এয়ার টিকিট, লাক্সারি হলিডে প্যাকেজ ও ট্যুরিস্ট ভিসা সেবার মাধ্যমে বিশ্বজুড়ে ঘুরে বেড়ান।">
+                                     Discover global destinations with our seamless international air ticketing, luxury holiday packages, and tourist visa services.
+                                </p> -->
                             </div>
                         </div>
                     </div>
@@ -321,14 +319,14 @@
                         >
                         <div class="absolute inset-0 bg-gradient-to-b from-[#1c1917]/85 via-[#292524]/75 to-[#0c0a09]/90"></div>
                         <div class="caplan-slide-content absolute inset-0 z-20 flex items-center justify-center">
-                            <div class="max-w-[800px] mx-auto px-3.5 sm:px-4 py-12 sm:py-20 animate-fadeInUp">
+                            <div class="max-w-5xl sm:max-w-6xl mx-auto px-2 xs:px-4 py-12 sm:py-20 animate-fadeInUp text-center">
                                 <span class="inline-block max-w-full bg-accent/20 border border-accent/40 text-accent-light px-3.5 py-1 sm:px-5 sm:py-1.5 rounded-full font-semibold text-[11px] sm:text-xs tracking-wider uppercase mb-4 sm:mb-6 shadow-sm truncate" data-lang-en="Licence number 1697 · Recruiting Agency" data-lang-bn="লাইসেন্স নম্বর: ১৬৯৭ · জনশক্তি নিয়োগকারী সংস্থা">Licence number 1697 · Recruiting Agency </span>
-                                <h2 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 tracking-tight drop-shadow-md" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">
-                                    Caplan International
+                                <h2 class="caplan-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 drop-shadow-md uppercase text-center whitespace-nowrap" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">
+                                    CAPLAN INTERNATIONAL
                                 </h2>
-                                <p class="text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Best fare deals on all international airlines, fast visa processing, and 24/7 travel assistance." data-lang-bn="সকল আন্তর্জাতিক এয়ারলাইন্সে সেরা ফেয়ার, দ্রুত ভিসা প্রসেসিং এবং ২৪/৭ ট্রাভেল সাপোর্ট।">
-                                    Best fare deals on all international airlines, fast visa processing, and 24/7 travel assistance.
-                                </p>
+                                <!-- <p class="text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Best fare deals on all international airlines, fast visa processing, and 24/7 travel assistance." data-lang-bn="সকল আন্তর্জাতিক এয়ারলাইন্সে সেরা ফেয়ার, দ্রুত ভিসা প্রসেসিং এবং ২৪/৭ ট্রাভেল সাপোর্ট।">
+                                     Best fare deals on all international airlines, fast visa processing, and 24/7 travel assistance.
+                                </p> -->
                             </div>
                         </div>
                     </div>
@@ -343,14 +341,14 @@
                         >
                         <div class="absolute inset-0 bg-gradient-to-b from-[#1c1917]/85 via-[#292524]/75 to-[#0c0a09]/90"></div>
                         <div class="caplan-slide-content absolute inset-0 z-20 flex items-center justify-center">
-                            <div class="max-w-[800px] mx-auto px-3.5 sm:px-4 py-12 sm:py-20 animate-fadeInUp">
+                            <div class="max-w-5xl sm:max-w-6xl mx-auto px-2 xs:px-4 py-12 sm:py-20 animate-fadeInUp text-center">
                                 <span class="inline-block max-w-full bg-accent/20 border border-accent/40 text-accent-light px-3.5 py-1 sm:px-5 sm:py-1.5 rounded-full font-semibold text-[11px] sm:text-xs tracking-wider uppercase mb-4 sm:mb-6 shadow-sm truncate" data-lang-en="Licence number 1697 · Recruiting Agency" data-lang-bn="লাইসেন্স নম্বর: ১৬৯৭ · জনশক্তি নিয়োগকারী সংস্থা">Licence number 1697 · Recruiting Agency </span>
-                                <h2 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 tracking-tight drop-shadow-md" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">
-                                    Caplan International
+                                <h2 class="caplan-title text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight mb-4 sm:mb-6 drop-shadow-md uppercase text-center whitespace-nowrap" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">
+                                    CAPLAN INTERNATIONAL
                                 </h2>
-                                <p class="text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Tailor-made family vacation packages, resort bookings, and corporate group tours tailored for you." data-lang-bn="আপনার চাহিদা অনুযায়ী কাস্টমাইজড ফ্যামিলি ভ্যাকেশন প্যাকেজ, রিসোর্ট বুকিং ও গ্রুপ ট্যুর।">
+                                <!-- <p class="text-xs xs:text-sm sm:text-lg lg:text-xl font-normal leading-relaxed opacity-90 mb-6 sm:mb-8 max-w-2xl mx-auto px-1" data-lang-en="Tailor-made family vacation packages, resort bookings, and corporate group tours tailored for you." data-lang-bn="আপনার চাহিদা অনুযায়ী কাস্টমাইজড ফ্যামিলি ভ্যাকেশন প্যাকেজ, রিসোর্ট বুকিং ও গ্রুপ ট্যুর।">
                                     Tailor-made family vacation packages, resort bookings, and corporate group tours tailored for you.
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                     </div>
@@ -358,13 +356,13 @@
             </div>
 
             <!-- Navigation Controls: Previous / Next Buttons -->
-            <button type="button" class="caplan-carousel-btn caplan-carousel-prev absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/30 hover:bg-amber-500/80 border border-white/20 hover:border-amber-400 text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-amber-400" id="caplanPrevBtn" aria-label="Previous Slide">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button type="button" class="caplan-carousel-btn caplan-carousel-prev absolute left-1 xxs:left-2 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-7 h-7 xxs:w-8 xxs:h-8 sm:w-11 sm:h-11 rounded-full bg-black/40 hover:bg-amber-500/80 border border-white/20 hover:border-amber-400 text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-amber-400" id="caplanPrevBtn" aria-label="Previous Slide">
+                <svg class="w-3.5 h-3.5 xxs:w-4 xxs:h-4 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
-            <button type="button" class="caplan-carousel-btn caplan-carousel-next absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/30 hover:bg-amber-500/80 border border-white/20 hover:border-amber-400 text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-amber-400" id="caplanNextBtn" aria-label="Next Slide">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button type="button" class="caplan-carousel-btn caplan-carousel-next absolute right-1 xxs:right-2 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-7 h-7 xxs:w-8 xxs:h-8 sm:w-11 sm:h-11 rounded-full bg-black/40 hover:bg-amber-500/80 border border-white/20 hover:border-amber-400 text-white hover:text-charcoal flex items-center justify-center backdrop-blur-md transition-all duration-300 shadow-lg group focus:outline-none focus:ring-2 focus:ring-amber-400" id="caplanNextBtn" aria-label="Next Slide">
+                <svg class="w-3.5 h-3.5 xxs:w-4 xxs:h-4 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -382,32 +380,37 @@
             <div class="max-w-[1280px] mx-auto px-3 sm:px-6 lg:px-8">
                 <div class="text-center mb-10 sm:mb-16">
                     <!-- <span class="inline-block text-accent-dark font-bold text-xs tracking-widest uppercase mb-2" data-lang-en="What We Offer" data-lang-bn="আমরা যা অফার করি">What We Offer</span> -->
-                    <h2 id="servicesTitle" class="text-xl sm:text-3xl lg:text-4xl font-bold text-charcoal tracking-tight mb-2 sm:mb-3" data-lang-en="Our Caplan International Services" data-lang-bn="আমাদের ক্যাপলান ইন্টারন্যশনাল সেবাসমূহ">Our Caplan International Services</h2>
-                    <p class="text-gray-500 max-w-xl mx-auto text-xs sm:text-base px-2" data-lang-en="Discover our wide range of services under Caplan International, tailored to make your journey seamless and spiritual." data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল-এর অধীনে আমাদের বিস্তৃত সেবাসমূহ আবিষ্কার করুন, যা আপনার সফরকে মসৃণ ও আধ্যাত্মিক করতে প্রস্তুত।">
+                    <div class="flex items-center justify-center gap-3 sm:gap-4 mb-2 sm:mb-3">
+                        <div class="w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full border border-amber-200 shadow-md p-1 shrink-0 flex items-center justify-center overflow-hidden">
+                            <img src="images/caplan-international-logo.jpg" alt="Caplan International Logo" class="w-full h-full object-contain rounded-full" />
+                        </div>
+                        <h2 id="servicesTitle" class="text-xl sm:text-3xl lg:text-4xl font-bold text-charcoal tracking-tight" data-lang-en="Caplan International Services" data-lang-bn="আমাদের ক্যাপলান ইন্টারন্যশনাল সেবাসমূহ">Caplan International Services</h2>
+                    </div>
+                    <!-- <p class="text-gray-500 max-w-xl mx-auto text-xs sm:text-base px-2" data-lang-en="Discover our wide range of services under Caplan International, tailored to make your journey seamless and spiritual." data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল-এর অধীনে আমাদের বিস্তৃত সেবাসমূহ আবিষ্কার করুন, যা আপনার সফরকে মসৃণ ও আধ্যাত্মিক করতে প্রস্তুত।">
                         Discover our wide range of services under Caplan International, tailored to make your journey seamless and spiritual.
-                    </p>
+                    </p> -->
                 </div>
 
                     <!-- Caplan International Card -->
                     <div id="caplan-international" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-amber-100/60 hover:border-amber-300 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
                         <div class="absolute top-0 right-0 w-36 h-36 bg-amber-50 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"></div>
-                        <div class="flex items-center gap-4 mb-6 relative z-10">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 text-white flex items-center justify-center text-2xl shadow-md shrink-0">
-                                🌐
+                        <!-- <div class="flex items-center gap-4 mb-6 relative z-10">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white border border-amber-200 p-1 shadow-md flex items-center justify-center shrink-0 overflow-hidden">
+                                <img src="images/caplan-international-logo.jpg" alt="Caplan International Logo" class="w-full h-full object-contain rounded-full" />
                             </div>
-                            <!-- <div>
-                                <span class="text-xs font-bold text-amber-700 tracking-wider uppercase" data-lang-en="Global Travel & Tourism" data-lang-bn="গ্লোবাল ট্রাভেল ও ট্যুরিজম">Global Travel & Tourism</span>
+                            <div>
+                                <span class="text-xs font-bold text-amber-800 tracking-wider uppercase" data-lang-en="Global Travel & Recruiting Agency" data-lang-bn="গ্লোবাল ট্রাভেল ও নিয়োগকারী সংস্থা">Global Travel & Recruiting Agency</span>
                                 <h3 class="text-xl sm:text-2xl font-extrabold text-charcoal tracking-tight" data-lang-en="Caplan International" data-lang-bn="ক্যাপলান ইন্টারন্যাশনাল">Caplan International</h3>
-                            </div> -->
-                        </div>
-                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-6 relative z-10" data-lang-en="Providing comprehensive global travel solutions including international air tickets, luxury hotel reservations worldwide, customized family holiday tours, and corporate travel logistics." data-lang-bn="আন্তর্জাতিক এয়ার টিকিট, বিশ্বব্যাপী লাক্সারি হোটেল বুকিং, কাস্টমাইজড ফ্যামিলি হলিডে ট্যুর এবং কর্পোরেট ট্রাভেল লজিস্টিকস সহ বিস্তৃত গ্লোবাল ট্রাভেল সমাধান প্রদান করে।">
+                            </div>
+                        </div> -->
+                        <p class="text-gray-800 text-sm sm:text-base md:text-lg font-normal leading-relaxed mb-6 relative z-10" data-lang-en="Providing comprehensive global travel solutions including international air tickets, luxury hotel reservations worldwide, customized family holiday tours, and corporate travel logistics." data-lang-bn="আন্তর্জাতিক এয়ার টিকিট, বিশ্বব্যাপী লাক্সারি হোটেল বুকিং, কাস্টমাইজড ফ্যামিলি হলিডে ট্যুর এবং কর্পোরেট ট্রাভেল লজিস্টিকস সহ বিস্তৃত গ্লোবাল ট্রাভেল সমাধান প্রদান করে।">
                             Providing comprehensive global travel solutions including international air tickets, luxury hotel reservations worldwide, customized family holiday tours, and corporate travel logistics.
                         </p>
-                        <ul class="space-y-3 text-xs sm:text-sm text-gray-700 mb-6 relative z-10">
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Manpower Export" data-lang-bn="জনশক্তি রপ্তানি ও বিদেশে কর্মসংস্থান">Manpower Export</span></li>
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Japan (Care-Giver, Construction, Agriculture, Sewing Operator, Driver) Skilled" data-lang-bn="জাপানে দক্ষ জনশক্তি রপ্তানি — কেয়ারগিভার, নির্মাণ, কৃষি, সেলাই অপারেটর ও ড্রাইভার">Japan (Care-Giver, Construction, Agriculture, Sewing Operator, Driver) Skilled</span></li>
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Middle East, Europe (skilled and non skilled)" data-lang-bn="মধ্যপ্রাচ্য ও ইউরোপ — দক্ষ ও অদক্ষ জনশক্তি রপ্তানি">Middle East, Europe (Skilled and Non Skilled)</span></li>
-                            <li class="flex items-center gap-3"><span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-xs font-bold shrink-0">✓</span> <span data-lang-en="Language Training Centre, Vocational Training Centre" data-lang-bn="ভাষা প্রশিক্ষণ কেন্দ্র, পেশাগত প্রশিক্ষণ কেন্দ্র">Language Training Centre, Vocational Training Centre</span></li>
+                        <ul class="space-y-3.5 sm:space-y-4 text-sm sm:text-base md:text-lg font-semibold text-gray-800 mb-6 relative z-10">
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Manpower Export" data-lang-bn="জনশক্তি রপ্তানি ও বিদেশে কর্মসংস্থান">Manpower Export</span></li>
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Japan (Care-Giver, Construction, Agriculture, Sewing Operator, Driver) Skilled" data-lang-bn="জাপানে দক্ষ জনশক্তি রপ্তানি — কেয়ারগিভার, নির্মাণ, কৃষি, সেলাই অপারেটর ও ড্রাইভার">Japan (Care-Giver, Construction, Agriculture, Sewing Operator, Driver) Skilled</span></li>
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Middle East, Europe (skilled and non skilled)" data-lang-bn="মধ্যপ্রাচ্য ও ইউরোপ — দক্ষ ও অদক্ষ জনশক্তি রপ্তানি">Middle East, Europe (Skilled and Non Skilled)</span></li>
+                            <li class="flex items-center gap-3.5"><span class="w-6 h-6 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-xs sm:text-sm font-extrabold shrink-0">✓</span> <span data-lang-en="Language Training Centre, Vocational Training Centre" data-lang-bn="ভাষা প্রশিক্ষণ কেন্দ্র, পেশাগত প্রশিক্ষণ কেন্দ্র">Language Training Centre, Vocational Training Centre</span></li>
                         </ul>
                         <!-- <a href="#flights" class="inline-flex items-center gap-2 text-amber-700 font-bold text-xs sm:text-sm hover:text-amber-900 transition-colors group/link relative z-10" data-lang-en="Book Flights & Global Tours →" data-lang-bn="ফ্লাইট ও ট্যুর বুক করুন →">
                             Book Flights & Global Tours <span class="group-hover/link:translate-x-1 transition-transform">→</span>
@@ -628,44 +631,126 @@
                 </form>
             </div>
 
-             <!-- ==================== BOARD OF DIRECTORS SECTION ==================== -->
+        <!-- ==================== PHOTO GALLERY CAROUSEL SECTION ==================== -->
+        <section class="py-14 sm:py-20 lg:py-24 bg-gradient-to-b from-white via-gray-50 to-white border-t border-gray-100 relative overflow-hidden" id="gallery" aria-labelledby="galleryTitle">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-10 sm:mb-14">
+                    <h2 id="galleryTitle" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-charcoal tracking-tight mb-3" data-lang-en="Photo Gallery & Moments" data-lang-bn="ফটো গ্যালারি ও মুহূর্তসমূহ">
+                        Photo Gallery & Moments
+                    </h2>
+                    <div class="w-16 sm:w-20 h-[3px] bg-primary rounded-full mx-auto mb-4"></div>
+                    
+                </div>
+
+                <!-- Gallery Carousel Container -->
+                <div class="relative px-8 sm:px-14 lg:px-16">
+                    <div class="overflow-hidden py-4" id="galleryCarouselContainer">
+                        <div class="gallery-carousel-track flex gap-6 transition-transform duration-500 ease-out" id="galleryCarouselTrack">
+                            <!-- Gallery Item 1 -->
+                            <div class="gallery-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0">
+                                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5 h-full">
+                                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                                        <img src="images/c1.jpeg" alt="Our Team & Activities" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                            <!-- Gallery Item 2 -->
+                            <div class="gallery-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0">
+                                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5 h-full">
+                                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                                        <img src="images/c2.jpeg" alt="Pilgrimage Leadership" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gallery Item 3 -->
+                            <div class="gallery-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0">
+                                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5 h-full">
+                                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                                        <img src="images/m1.jpeg" alt="Operations & Flight Logistics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gallery Item 4 -->
+                            <div class="gallery-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0">
+                                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5 h-full">
+                                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                                        <img src="images/m2.jpeg" alt="Strategic Planning & Services" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gallery Item 5 -->
+                            <div class="gallery-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0">
+                                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5 h-full">
+                                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                                        <img src="images/m3.jpeg" alt="Client Relations & Hospitality" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls: Previous / Next Buttons -->
+                    <button type="button" class="gallery-carousel-btn absolute left-0 sm:left-2 top-1/2 -translate-y-1/2 z-20 w-7.5 h-7.5 sm:w-9 sm:h-9 rounded-full bg-white shadow-md border border-gray-200 text-gray-700 hover:text-primary hover:bg-emerald-50 hover:border-primary flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary" id="galleryPrevBtn" aria-label="Previous Photo">
+                        <svg class="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button type="button" class="gallery-carousel-btn absolute right-0 sm:right-2 top-1/2 -translate-y-1/2 z-20 w-7.5 h-7.5 sm:w-9 sm:h-9 rounded-full bg-white shadow-md border border-gray-200 text-gray-700 hover:text-primary hover:bg-emerald-50 hover:border-primary flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary" id="galleryNextBtn" aria-label="Next Photo">
+                        <svg class="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <!-- Carousel Dots Pagination -->
+                    <div class="gallery-carousel-dots flex items-center justify-center gap-2.5 mt-6" id="galleryDotsContainer" role="tablist" aria-label="Photo Gallery Slides">
+                        <button type="button" class="gallery-dot active w-2.5 h-2.5 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300 cursor-pointer" data-slide-to="0" role="tab" aria-selected="true" aria-label="Photo 1"></button>
+                        <button type="button" class="gallery-dot w-2.5 h-2.5 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300 cursor-pointer" data-slide-to="1" role="tab" aria-selected="false" aria-label="Photo 2"></button>
+                        <button type="button" class="gallery-dot w-2.5 h-2.5 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300 cursor-pointer" data-slide-to="2" role="tab" aria-selected="false" aria-label="Photo 3"></button>
+                        <button type="button" class="gallery-dot w-2.5 h-2.5 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300 cursor-pointer" data-slide-to="3" role="tab" aria-selected="false" aria-label="Photo 4"></button>
+                        <button type="button" class="gallery-dot w-2.5 h-2.5 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300 cursor-pointer" data-slide-to="4" role="tab" aria-selected="false" aria-label="Photo 5"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BOARD OF DIRECTORS SECTION ==================== -->
         <section class="py-14 sm:py-20 lg:py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50 border-t border-gray-100" id="directors" aria-labelledby="directorsTitle">
             <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header -->
                 <div class="text-center mb-12 sm:mb-16">
-                    <span class="inline-block text-accent-dark font-bold text-xs tracking-widest uppercase mb-2" data-lang-en="Leadership & Governance" data-lang-bn="নেতৃত্ব ও পরিচালনা">Leadership & Governance</span>
+                    
                     <h2 id="directorsTitle" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-charcoal tracking-tight mb-3" data-lang-en="Board of Directors" data-lang-bn="পরিচালনা পর্ষদ">
                         Board of Directors
                     </h2>
                     <div class="w-16 sm:w-20 h-[3px] bg-primary rounded-full mx-auto mb-4"></div>
-                    <p class="text-gray-600 max-w-2xl mx-auto text-xs sm:text-base leading-relaxed px-2" data-lang-en="Meet the visionary leaders driving excellence, integrity, and spiritual devotion across all our travel and pilgrimage services." data-lang-bn="আমাদের সমস্ত ট্রাভেল ও তীর্থযাত্রার সেবায় উৎকর্ষ, সততা ও আধ্যাত্মিক নিষ্ঠা পরিচালনাকারী দূরদর্শী নেতৃবৃন্দের সাথে পরিচিত হন।">
-                        Meet the visionary leaders driving excellence, integrity, and spiritual devotion across all our travel and pilgrimage services.
-                    </p>
                 </div>
 
                 <!-- Directors Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     <!-- Director 1 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5">
                         <div class="relative overflow-hidden aspect-square bg-gray-100">
-                            <img src="images/director-1.jpg" alt="Alhaj Mohammad Rafiqul Islam - Chairman & Managing Director" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                <span class="text-white text-xs font-medium" data-lang-en="Over 20+ years of pilgrimage leadership" data-lang-bn="২০+ বছরের তীর্থযাত্রা পরিচালনার অভিজ্ঞতা">Over 20+ years of pilgrimage leadership</span>
-                            </div>
+                            <img src="images/Chairmen .jpeg" alt="Mohammad Rafiqul Islam - Chairman" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                         </div>
                         <div class="p-5 flex flex-col flex-grow bg-white">
                             <!-- Company Badge -->
-                            <div class="mb-2">
+                            <!-- <div class="mb-2">
                                 <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800 text-[11px] font-bold tracking-wide uppercase border border-emerald-100" data-lang-en="Noor Al-Iman Travels" data-lang-bn="নূর আল-ঈমান ট্রাভেলস">
                                     Noor Al-Iman Travels
                                 </span>
-                            </div>
+                            </div> -->
                             <!-- Name & Designation -->
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors" data-lang-en="Alhaj Mohammad Rafiqul Islam" data-lang-bn="আলহাজ্ব মোহাম্মদ রফিকুল ইসলাম">
-                                Alhaj Mohammad Rafiqul Islam
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors" data-lang-en="Alhaj Mohammad Rafiqul Islam" data-lang-bn="মোহাম্মদ রফিকুল ইসলাম">
+                                 Mohammad Rafiqul Islam
                             </h3>
-                            <p class="text-xs sm:text-sm font-semibold text-primary mt-1" data-lang-en="Chairman & Managing Director" data-lang-bn="চেয়ারম্যান ও ব্যবস্থাপনা পরিচালক">
-                                Chairman & Managing Director
+                            <p class="text-xs sm:text-sm font-semibold text-primary mt-1" data-lang-en="Chairman" data-lang-bn="চেয়ারম্যান">
+                                Chairman
                             </p>
                         </div>
                     </div>
@@ -673,76 +758,47 @@
                     <!-- Director 2 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5">
                         <div class="relative overflow-hidden aspect-square bg-gray-100">
-                            <img src="images/director-2.jpg" alt="Engr. Tariq Hassan - Director of Operations" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                <span class="text-white text-xs font-medium" data-lang-en="Expert in flight & hotel logistics" data-lang-bn="ফ্লাইট ও হোটেল লজিস্টিকসে বিশেষজ্ঞ">Expert in flight & hotel logistics</span>
-                            </div>
+                            <img src="images/md.jpeg" alt="Md Hedayatul Islam Raju - Managing Director" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                         </div>
                         <div class="p-5 flex flex-col flex-grow bg-white">
                             <!-- Company Badge -->
-                            <div class="mb-2">
+                            <!-- <div class="mb-2">
                                 <span class="inline-block px-2.5 py-1 rounded-md bg-red-50 text-[#C0392B] text-[11px] font-bold tracking-wide uppercase border border-red-100" data-lang-en="Caplan Tours & Travels" data-lang-bn="ক্যাপলান ট্যুরস অ্যান্ড ট্রাভেলস">
                                     Caplan Tours & Travels
                                 </span>
-                            </div>
+                            </div> -->
                             <!-- Name & Designation -->
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-[#C0392B] transition-colors" data-lang-en="Engr. Tariq Hassan" data-lang-bn="ইঞ্জিঃ তারিক হাসান">
-                                Engr. Tariq Hassan
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors" data-lang-en="Md Hedayatul Islam Raju" data-lang-bn="মোঃ হেদায়েতুল ইসলাম রাজু">
+                                 Md. Hedayatul Islam Raju
                             </h3>
-                            <p class="text-xs sm:text-sm font-semibold text-[#C0392B] mt-1" data-lang-en="Director of Operations" data-lang-bn="পরিচালক (অপারেশনস)">
-                                Director of Operations
+                            <p class="text-xs sm:text-sm font-semibold text-primary mt-1" data-lang-en="Managing Director" data-lang-bn="ব্যবস্থাপনা পরিচালক">
+                                Managing Director
                             </p>
                         </div>
                     </div>
 
-                    <!-- Director 3 -->
+                     <!-- Director 2 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5">
                         <div class="relative overflow-hidden aspect-square bg-gray-100">
-                            <img src="images/director-3.jpg" alt="Syed Mahmudur Rahman - Director of Finance & Strategy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                <span class="text-white text-xs font-medium" data-lang-en="Strategic planning & air ticketing head" data-lang-bn="কৌশলগত পরিকল্পনা ও এয়ার টিকিট প্রধান">Strategic planning & air ticketing head</span>
-                            </div>
+                            <img src="images/d.jpeg" alt="Md Nazrul Islam - Director" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                         </div>
                         <div class="p-5 flex flex-col flex-grow bg-white">
                             <!-- Company Badge -->
-                            <div class="mb-2">
-                                <span class="inline-block px-2.5 py-1 rounded-md bg-blue-50 text-[#1E3A8A] text-[11px] font-bold tracking-wide uppercase border border-blue-100" data-lang-en="Cravel Air International" data-lang-bn="ক্রেভেল এয়ার ইন্টারন্যাশনাল">
-                                    Cravel Air International
+                            <!-- <div class="mb-2">
+                                <span class="inline-block px-2.5 py-1 rounded-md bg-red-50 text-[#C0392B] text-[11px] font-bold tracking-wide uppercase border border-red-100" data-lang-en="Caplan Tours & Travels" data-lang-bn="ক্যাপলান ট্যুরস অ্যান্ড ট্রাভেলস">
+                                    Caplan Tours & Travels
                                 </span>
-                            </div>
+                            </div> -->
                             <!-- Name & Designation -->
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-[#1E3A8A] transition-colors" data-lang-en="Syed Mahmudur Rahman" data-lang-bn="সৈয়দ মাহমুদুর রহমান">
-                                Syed Mahmudur Rahman
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors" data-lang-en="Md Nazrul Islam" data-lang-bn="মোঃ নজরুল ইসলাম">
+                                 Md. Nazrul Islam
                             </h3>
-                            <p class="text-xs sm:text-sm font-semibold text-[#1E3A8A] mt-1" data-lang-en="Director of Finance & Strategy" data-lang-bn="পরিচালক (অর্থ ও পরিকল্পনা)">
-                                Director of Finance & Strategy
+                            <p class="text-xs sm:text-sm font-semibold text-primary mt-1" data-lang-en="Director" data-lang-bn="পরিচালক">
+                                 Director
                             </p>
                         </div>
                     </div>
 
-                    <!-- Director 4 -->
-                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1.5">
-                        <div class="relative overflow-hidden aspect-square bg-gray-100">
-                            <img src="images/director-4.jpg" alt="Mrs. Nasreen Sultana - Director of Client Relations" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                <span class="text-white text-xs font-medium" data-lang-en="Dedicated to pilgrim welfare & service" data-lang-bn="হাজীদের কল্যাণ ও সেবায় নিবেদিত">Dedicated to pilgrim welfare & service</span>
-                            </div>
-                        </div>
-                        <div class="p-5 flex flex-col flex-grow bg-white">
-                            <!-- Company Badge -->
-                            <div class="mb-2">
-                                <span class="inline-block px-2.5 py-1 rounded-md bg-amber-50 text-amber-900 text-[11px] font-bold tracking-wide uppercase border border-amber-200" data-lang-en="Caplan Overseas" data-lang-bn="ক্যাপলান ওভারসিজ">
-                                    Caplan Overseas
-                                </span>
-                            </div>
-                            <!-- Name & Designation -->
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug group-hover:text-amber-700 transition-colors" data-lang-en="Mrs. Nasreen Sultana" data-lang-bn="মিসেস নাসরিন সুলতানা">
-                                Mrs. Nasreen Sultana
-                            </h3>
-                            <p class="text-xs sm:text-sm font-semibold text-amber-700 mt-1" data-lang-en="Director of Client Relations" data-lang-bn="পরিচালক (গ্রাহক সম্পর্ক)">
-                                Director of Client Relations
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -755,7 +811,7 @@
                 <!-- Section Title & Blue Underline -->
                 <div class="text-center mb-10 sm:mb-14">
                     <h2 id="sisterConcernTitle" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#C0392B] tracking-tight mb-2" data-lang-en="Sister Concern" data-lang-bn="সিস্টার কনসার্ন">
-                        Sister Concern
+                        Our Sister Concern
                     </h2>
                     <div class="w-16 sm:w-20 h-[3px] bg-[#2563EB] rounded-full mx-auto"></div>
                 </div>
@@ -766,12 +822,12 @@
                     <div class="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-white rounded-2xl border border-gray-100/80 shadow-sm hover:shadow-md transition-shadow">
                         <!-- Logo Icon -->
                         <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white flex items-center justify-center shadow-md shrink-0 relative border-2 border-gray-100 ring-2 ring-red-100/60 overflow-hidden">
-                            <img src="images/caplan-logo.jpg" alt="Caplan Tours and Travels Logo" class="w-full h-full object-cover rounded-full z-10" />
+                            <img src="images/tours.jpeg" alt="Caplan Tours and Travels Logo" class="w-full h-full object-cover rounded-full z-10" />
                         </div>
                         <!-- Brand Info -->
                         <div class="flex flex-col">
                             <h3 class="text-xl sm:text-2xl font-extrabold tracking-tight leading-tight">
-                                <span class="text-[#C0392B]">Caplan</span> <span class="text-[#1E3A8A]">Tours and Travels.</span>
+                                <span class="text-[#1E3A8A]">Caplan</span> <span class="text-[#1E3A8A]">Tours and Travels.</span>
                             </h3>
                             <p class="text-xs sm:text-sm font-semibold text-gray-800 mt-1" data-lang-en="Govt. Approved Recruiting Agent (Licence No - 1433)." data-lang-bn="সরকার অনুমোদিত রিক্রুটিং এজেন্ট (লাইসেন্স নং - ১৪৩৩)।">
                                 Govt. Approved Recruiting Agent (Licence No - 1433).
@@ -786,12 +842,12 @@
                     <div class="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-white rounded-2xl border border-gray-100/80 shadow-sm hover:shadow-md transition-shadow">
                         <!-- Logo Icon -->
                         <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white flex items-center justify-center shadow-md shrink-0 relative border-2 border-gray-100 ring-2 ring-blue-100/60 overflow-hidden">
-                            <img src="images/cravel-air-logo.jpg" alt="Cravel Air International Logo" class="w-full h-full object-cover rounded-full z-10" />
+                            <img src="images/air.jpeg" alt="Cravel Air International Logo" class="w-full h-full object-cover rounded-full z-10" />
                         </div>
                         <!-- Brand Info -->
                         <div class="flex flex-col">
                             <h3 class="text-xl sm:text-2xl font-extrabold tracking-tight leading-tight">
-                                <span class="text-[#C0392B]">Cravel Air</span> <span class="text-[#1E3A8A]">International.</span>
+                                <span class="text-[#1E3A8A]">Cravel Air</span> <span class="text-[#1E3A8A]">International.</span>
                             </h3>
                             <p class="text-xs sm:text-sm font-semibold text-gray-800 mt-1" data-lang-en="A government-approved recruiting agent (License No. 2514)." data-lang-bn="সরকার অনুমোদিত রিক্রুটিং এজেন্ট (লাইসেন্স নং ২৫১৪)।">
                                 A government-approved recruiting agent (License No. 2514).
@@ -805,7 +861,72 @@
             </div>
         </section>
 
-       
+        <!-- ==================== AFFILIATED WITH & ACCREDITATIONS SECTION ==================== -->
+        <section class="py-14 sm:py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50 border-t border-gray-100" id="affiliations" aria-labelledby="affiliationsTitle">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Title & Gold Underline -->
+                <div class="text-center mb-10 sm:mb-14">
+                    <h2 id="affiliationsTitle" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-charcoal tracking-tight mb-2" data-lang-en="Affiliated With & Member Of" data-lang-bn="অনুমোদিত ও অধিভুক্ত সংস্থাসমূহ">
+                        Affiliated With & Member Of
+                    </h2>
+                    <div class="w-16 sm:w-20 h-[3px] bg-accent rounded-full mx-auto"></div>
+                </div>
+
+                <!-- Affiliations Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-6 lg:gap-8 max-w-[1050px] mx-auto">
+                    <!-- Item 1: HAAB -->
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-emerald-50 border border-emerald-100/80 p-3 flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-emerald-100/50 transition-transform shadow-xs">
+                            <!-- HAAB Emblem SVG -->
+                            <svg class="w-full h-full text-primary" viewBox="0 0 64 64" fill="none">
+                                <circle cx="32" cy="32" r="30" stroke="#0B5345" stroke-width="2.5" fill="#E8F5F0" />
+                                <path d="M22 36C22 28 28 22 36 22C33 22 28 25 28 32C28 39 33 42 36 42C28 42 22 36 22 36Z" fill="#D4AF37" stroke="#D4AF37" stroke-width="1.5" />
+                                <polygon points="40,24 42,29 47,29 43,32 45,37 40,34 35,37 37,32 33,29 38,29" fill="#0B5345" />
+                                <text x="32" y="52" text-anchor="middle" font-size="8" font-weight="800" fill="#0B5345" font-family="sans-serif">HAAB</text>
+                            </svg>
+                        </div>
+                        <span class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-bold uppercase tracking-wider mb-2" data-lang-en="Hajj Member" data-lang-bn="হজ্জ সদস্য">Hajj Member</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight mb-1 group-hover:text-primary transition-colors">HAAB</h3>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700 mb-1" data-lang-en="Hajj Agencies Association of Bangladesh" data-lang-bn="হজ্জ এজেন্সীজ এসোসিয়েশন অফ বাংলাদেশ">Hajj Agencies Association of Bangladesh</p>
+                        <p class="text-[11px] sm:text-xs text-gray-500 font-normal leading-relaxed mt-auto" data-lang-en="Govt. Approved Hajj & Umrah Member Agency" data-lang-bn="সরকার অনুমোদিত হজ্জ ও উমরাহ এজেন্সী সদস্য">Govt. Approved Hajj & Umrah Member Agency</p>
+                    </div>
+
+                    <!-- Item 2: ATAB -->
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-blue-50 border border-blue-100/80 p-3 flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-blue-100/50 transition-transform shadow-xs">
+                            <!-- ATAB Emblem SVG -->
+                            <svg class="w-full h-full text-blue-700" viewBox="0 0 64 64" fill="none">
+                                <circle cx="32" cy="32" r="30" stroke="#1E3A8A" stroke-width="2.5" fill="#EFF6FF" />
+                                <path d="M32 12 L36 28 L52 32 L36 36 L32 52 L28 36 L12 32 L28 28 Z" fill="#2563EB" stroke="#1E3A8A" stroke-width="1.5" />
+                                <circle cx="32" cy="32" r="6" fill="#D4AF37" />
+                                <text x="32" y="58" text-anchor="middle" font-size="8" font-weight="800" fill="#1E3A8A" font-family="sans-serif">ATAB</text>
+                            </svg>
+                        </div>
+                        <span class="inline-block px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-800 text-[10px] font-bold uppercase tracking-wider mb-2" data-lang-en="Travel Member" data-lang-bn="ট্রাভেল সদস্য">Travel Member</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight mb-1 group-hover:text-blue-700 transition-colors">ATAB</h3>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700 mb-1" data-lang-en="Association of Travel Agents of Bangladesh" data-lang-bn="অ্যাসোসিয়েশন অফ ট্রাভেল এজেন্টস অফ বাংলাদেশ">Association of Travel Agents of Bangladesh</p>
+                        <p class="text-[11px] sm:text-xs text-gray-500 font-normal leading-relaxed mt-auto" data-lang-en="Apex Body of Travel & Tourism Industry" data-lang-bn="ট্রাভেল ও ট্যুরিজম শিল্পের শীর্ষ সংস্থা">Apex Body of Travel & Tourism Industry</p>
+                    </div>
+
+                    <!-- Item 3: IATA -->
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-amber-50 border border-amber-100/80 p-3 flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-amber-100/50 transition-transform shadow-xs">
+                            <!-- IATA Emblem SVG -->
+                            <svg class="w-full h-full text-amber-700" viewBox="0 0 64 64" fill="none">
+                                <circle cx="32" cy="32" r="30" stroke="#B8960F" stroke-width="2.5" fill="#FEF3C7" />
+                                <path d="M16 38 C 24 24, 40 24, 48 38" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round" />
+                                <path d="M22 28 L42 28 L32 16 Z" fill="#D4AF37" stroke="#B8960F" stroke-width="1.5" />
+                                <text x="32" y="52" text-anchor="middle" font-size="9" font-weight="900" fill="#1F2937" font-family="sans-serif">IATA</text>
+                            </svg>
+                        </div>
+                        <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 text-[10px] font-bold uppercase tracking-wider mb-2" data-lang-en="Global Aviation" data-lang-bn="গ্লোবাল এভিয়েশন">Global Aviation</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight mb-1 group-hover:text-amber-700 transition-colors">IATA</h3>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700 mb-1" data-lang-en="International Air Transport Association" data-lang-bn="ইন্টারন্যাশনাল এয়ার ট্রান্সপোর্ট অ্যাসোসিয়েশন">International Air Transport Association</p>
+                        <p class="text-[11px] sm:text-xs text-gray-500 font-normal leading-relaxed mt-auto" data-lang-en="Worldwide Airline Ticketing Partner" data-lang-bn="বিশ্বব্যাপী এয়ারলাইন টিকিট পার্টনার">Worldwide Airline Ticketing Partner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     
     </main>
 
